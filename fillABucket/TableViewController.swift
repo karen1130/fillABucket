@@ -12,9 +12,13 @@ class TableViewController: UITableViewController {
 
     var captions : [Entity] = []
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -87,22 +91,73 @@ class TableViewController: UITableViewController {
         }// end of if editingStyle
         
     }//end of tableview
- 
+    
+    
+    
+   
+    @IBOutlet weak var editButtonText: UIBarButtonItem!
+    
+    var number = 1
+    
+    @IBAction func editButton(_ sender: Any) {
+    
+        
+        
+        //editButtonText.title = "DONE"
+       isEditing = !isEditing
+        
+       number = (number + 1)
+    
+        if number % 2 == 0 {
+            isEditing = isEditing
+            editButtonText.title = "DONE"
+        }
+        else if number % 2 != 0 {
+            //isEditing = !isEditing
+            editButtonText.title = "EDIT"
+        }
+        
+        
+        /*
+        if isEditing != true{
+            editButtonText.title = "DONE"
+        }
+        
+        else {
+             editButtonText.title = "EDIT"
+        }
+        
+        //let editButton = UIBarButtonItem()
+        //editButton.title = "Cancel"
+        */
+    }
+        
 
-    /*
+   
+    
+    
+    
+
+    
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
+        
+        let itemToMove = captions[fromIndexPath.row]
+        captions.remove(at: fromIndexPath.row)
+        captions.insert(itemToMove, at: fromIndexPath.row)
+        
     }
-    */
+    
 
-    /*
+    
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
+        
     }
-    */
+    
 
     /*
     // MARK: - Navigation
@@ -113,5 +168,19 @@ class TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCell.AccessoryType.checkmark{
+            
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.none
+        }//end of it
+        else {
+        tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.checkmark
+        }//end of else
+        
+    }//end of tableView
+
+
 
 }

@@ -48,4 +48,24 @@ class AddListViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var captionText: UITextField!
     
+
+    /*@IBAction func btn_box(_ sender: UIButton) {
+    sender.isSelected = !sender.isSelected
+    }//end on btn_box . selcted button
+
+    */
+    
 }
+
+
+
+   
+
+
+
+
+
+
+
+
+
