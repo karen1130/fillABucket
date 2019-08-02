@@ -18,10 +18,10 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
 
         
-        
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
+        
+        //self.clearSelectionOnViewWillAppear = false
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -72,7 +72,7 @@ class TableViewController: UITableViewController {
         return true
     }
  
-
+   var isDone : Bool = false
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -89,7 +89,11 @@ class TableViewController: UITableViewController {
             }//end of if let context
             
         }// end of if editingStyle
+       /*
+        let item = Entity []
         
+        let done =
+    */
     }//end of tableview
     
     
@@ -174,6 +178,7 @@ class TableViewController: UITableViewController {
         if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCell.AccessoryType.checkmark{
             
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.none
+            
         }//end of it
         else {
         tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.checkmark

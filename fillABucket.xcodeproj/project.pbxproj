@@ -14,6 +14,10 @@
 		18EA238622F2201D00C64BF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EA238422F2201D00C64BF9 /* LaunchScreen.storyboard */; };
 		18EA239222F2226D00C64BF9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA239122F2226D00C64BF9 /* TableViewController.swift */; };
 		18EA239422F2274200C64BF9 /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA239322F2274200C64BF9 /* AddListViewController.swift */; };
+		18F1759D22F4700700CB8CEC /* AdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1759C22F4700700CB8CEC /* AdditionViewController.swift */; };
+		18F1759F22F4703800CB8CEC /* AdrenalineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1759E22F4703800CB8CEC /* AdrenalineViewController.swift */; };
+		18F175A122F4728600CB8CEC /* SpookyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F175A022F4728600CB8CEC /* SpookyViewController.swift */; };
+		18F175A322F474EB00CB8CEC /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F175A222F474EB00CB8CEC /* FoodViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		18EA238722F2201D00C64BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18EA239122F2226D00C64BF9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		18EA239322F2274200C64BF9 /* AddListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
+		18F1759C22F4700700CB8CEC /* AdditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionViewController.swift; sourceTree = "<group>"; };
+		18F1759E22F4703800CB8CEC /* AdrenalineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdrenalineViewController.swift; sourceTree = "<group>"; };
+		18F175A022F4728600CB8CEC /* SpookyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpookyViewController.swift; sourceTree = "<group>"; };
+		18F175A222F474EB00CB8CEC /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,10 @@
 				18EA237822F2201C00C64BF9 /* AppDelegate.swift */,
 				18EA239122F2226D00C64BF9 /* TableViewController.swift */,
 				18EA239322F2274200C64BF9 /* AddListViewController.swift */,
+				18F1759C22F4700700CB8CEC /* AdditionViewController.swift */,
+				18F1759E22F4703800CB8CEC /* AdrenalineViewController.swift */,
+				18F175A022F4728600CB8CEC /* SpookyViewController.swift */,
+				18F175A222F474EB00CB8CEC /* FoodViewController.swift */,
 				18EA237C22F2201C00C64BF9 /* Main.storyboard */,
 				18EA238222F2201D00C64BF9 /* Assets.xcassets */,
 				18EA238422F2201D00C64BF9 /* LaunchScreen.storyboard */,
@@ -143,8 +155,12 @@
 			files = (
 				18EA239422F2274200C64BF9 /* AddListViewController.swift in Sources */,
 				18EA238122F2201C00C64BF9 /* fillABucket.xcdatamodeld in Sources */,
+				18F175A322F474EB00CB8CEC /* FoodViewController.swift in Sources */,
+				18F175A122F4728600CB8CEC /* SpookyViewController.swift in Sources */,
+				18F1759D22F4700700CB8CEC /* AdditionViewController.swift in Sources */,
 				18EA237922F2201C00C64BF9 /* AppDelegate.swift in Sources */,
 				18EA239222F2226D00C64BF9 /* TableViewController.swift in Sources */,
+				18F1759F22F4703800CB8CEC /* AdrenalineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
